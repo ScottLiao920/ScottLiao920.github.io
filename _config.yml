@@ -20,13 +20,15 @@ plugins:
 - jemoji
 - jekyll-remote-theme
 
+BASE_PATH : /ScottLiao920
+
 # Site settings
 url: ''
 baseurl: ''
 title: 'Liao Chang'
 description: "This is Liao Chang's website"
 permalink: pretty
-logo: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=52"
+#logo: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=52"
 
 # Pagination
 paginate: 5
@@ -40,8 +42,8 @@ navigation_header:
   url: /about/
 - title: Blog
   url: /blog/
-- title: projects
-  url: /projects/
+#- title: projects
+#  url: /projects/
 
 # Footer nav
 navigation_footer:

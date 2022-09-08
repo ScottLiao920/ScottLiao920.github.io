@@ -1,5 +1,8 @@
 ---
-title: About this website
+title: About Me
 ---
 
-I'm not sure yet what this website is about, but I'm sure I'll work it out soon.
+* Liao Chang <br>
+* Research Assistant, School of Computing, National University of Singapore
+* Supervisor: Prof.Xiao Xiaokui
+* Research Interest: Databases x AI
