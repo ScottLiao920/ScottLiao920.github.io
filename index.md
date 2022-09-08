@@ -6,3 +6,6 @@ feature_text: |
 ---
 
 There isn't much going on here yet, but watch this space
+
+Github Profile: https://github.com/ScottLiao920
+Email: cliaosoc@nus.edu.sg
