@@ -2,7 +2,7 @@
 title: Available Join/Scan Methods in PostgreSQL
 ---
 
-# Basics: PostgreSQL filesystem
+## Basics: PostgreSQL filesystem
 
 * PostgreSQL is a disk-oriented database, which means its data are stored on disks in pages. Access to heap page can
   be random or sequential, where random access costs roughly ~4times more expensive than a sequential access.
@@ -13,37 +13,38 @@ title: Available Join/Scan Methods in PostgreSQL
 * Tuple Identifier (TID) is used to record the unique location of a tuple. It is 6-byte long and consists of two parts:
   4-byte-long page number and 4-byte-long index number inside the page.
 
-# Scan Methods
+## Scan Methods
 
 * **Sequential Scan**
-    * Iterate through the table sequentially and return tuples that matches predicate one at a time.
-    * Cost is computed based on seq_page_cost * no. of pages.
-      * More precisely,
-      
+  * Iterate through the table sequentially and return tuples that matches predicate one at a time.
+  * Cost is computed based on seq_page_cost * no. of pages.
+    * More precisely,
+
         `cost = blocks * seq_page_cost +
          number_of_records * cpu_tuple_cost +
          number_of_records * cpu_filter_cost`
-    * Ideal for high-selectivity operations.
+  * Ideal for high-selectivity operations.
 * **Index Scan**
-    * Get the TID of tuples that match the predicate, access corresponding heap pages to get the tuple.
-    * Cost is computed based on 2 * random_page_cost (index + heap).
-    * Ideal for low-selectivity operations.
+  * Get the TID of tuples that match the predicate, access corresponding heap pages to get the tuple.
+  * Cost is computed based on 2 * random_page_cost (index + heap).
+  * Ideal for low-selectivity operations.
 * **Index Only Scan**
-    * Similar to index scan but no need to access heap pages because only the column with index is required to emit.
-    * Example: `select num from table where num=1;`
+  * Similar to index scan but no need to access heap pages because only the column with index is required to emit.
+  * Example: `select num from table where num=1;`
 * **Bitmap Scan**
-    * Mix-up of index scan and sequential scan. Two-phases: bitmap index scan and bitmap heap scan.
-    * Bitmap index scan: Read all indexes to create a bitmap of tuple TIDs. Each entry in bitmap is page no. and it
+  * Mix-up of index scan and sequential scan. Two-phases: bitmap index scan and bitmap heap scan.
+  * Bitmap index scan: Read all indexes to create a bitmap of tuple TIDs. Each entry in bitmap is page no. and it
       consists of indexes of tuples to read in that page.
-    * Bitmap heap scan: Read tuples based on the bitmap.
-    * Ideal for the most cases where sensitivity is neither too high nor too low
+  * Bitmap heap scan: Read tuples based on the bitmap.
+  * Ideal for the most cases where sensitivity is neither too high nor too low
 * **TID Scan**
   * Only applicable when TID is the only predicate.
   * Example `select * from table where ctid=(page, tuple);`
 
-# Join Methods
+## Join Methods
+
 * **Nested Loop Join**
-  * pseudocode for join table A & table B on predicate `A.ID < B.ID`: 
+  * pseudocode for join table A & table B on predicate `A.ID < B.ID`:
 
         for every tuple a in A:
             for evey tuple b in B:
@@ -52,7 +53,7 @@ title: Available Join/Scan Methods in PostgreSQL
   
 * **Merge Join**
   * Only applicable to equi-join with predicate on indexed columns
-      
+
          For each tuple r in A
              For each tuple s in B
                  If (r.ID = s.ID)
@@ -68,8 +69,8 @@ title: Available Join/Scan Methods in PostgreSQL
   * Two Phases:
     * Build-phase: build hash table on inner table
     * Probe-phase: probe the outer table, emit joined tuples that match predicate
-  * Pseudocode (A join B on `A.ID = B.ID`: 
-          
+  * Pseudocode (A join B on `A.ID = B.ID`:
+
         # Build Phase
         for every tuple r in B:
             insert h(r.ID) into hash table 

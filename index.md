@@ -5,87 +5,84 @@ feature_text: |
 ## Stay Hungry, Stay Foolish
 ---
 
-## Programmer, Cyclist, Cook, Gamer 
+## Programmer, Cyclist, Cook, Gamer
 
 ============
 
-Contact
+## Contact
+
 -------
-Email: scottliao920@gmail.com
 
+Serious stuff: [Email](scottliao920@gmail.com)
+[Github](https://github.com/ScottLiao920)
+[LinkedIn](https://www.linkedin.com/in/chang-liao-311647136/)
 
-Education
----------
+Sports: [Strava](https://www.strava.com/athletes/95326544)
+
+## Education
+
+-------
+
 2017-2021
-:   **BEng (Highest Distinction), Electrical and Electronic Engineering** Nanyang Technology University,
-Singapore
-    **
+:   **BEng (Highest Distinction), Electrical and Electronic Engineering** Nanyang Technology University, Singapore
 
-Experience
-----------
+* CGPA: 4.59 / 5.00
+* Dean'list (top 5% of the cohort), AY2019-2020
+* NTU Science and Engineering Scholarship
 
-**Your Most Recent Work Experience:**
+## Experience
 
-Short text containing the type of work done, results obtained,
-lessons learned and other remarks. Can also include lists and
-links:
+-------
 
-* First item
+### Research Assistant
 
-* Item with [link](http://www.example.com). Links will work both in
-  the html and pdf versions.
+National University of Singapore, Singapore
 
-**That Other Job You Had**
+* Researching on query representation methods for AI-powered databases.
 
-Also with a short description.
+### Data Scientist Intern
 
-Technical Experience
---------------------
+Shopee Pte. Ltd., Singapore
 
-My Cool Side Project
-:   For items which don't have a clear time ordering, a definition
-list can be used to have named items.
+* Accelerated BERT inference under certain downstream tasks from 10ms to 2ms per batch.
 
-    * These items can also contain lists, but you need to mind the
-      indentation levels in the markdown source.
-    * Second item.
+* Built an Automatic machine learning pipeline with Ray Tune and Bayesian Optimization, model trained from AutoML pipeline achieves 3% conversion rate compared to 2% of a model manually tuned by experienced engineer.
 
-Open Source
-:   List open source contributions here, perhaps placing emphasis on
-the project names, for example the **Linux Kernel**, where you
-implemented multithreading over a long weekend, or **node.js**
-(with [link](http://nodejs.org)) which was actually totally
-your idea...
+### Research Engineer Intern
 
-Programming Languages
-:   **first-lang:** Here, we have an itemization, where we only want
-to add descriptions to the first few items, but still want to
-mention some others together at the end. A format that works well
-here is a description list where the first few items have their
-first word emphasized, and the last item contains the final few
-emphasized terms. Notice the reasonably nice page break in the pdf
-version, which wouldn't happen if we generated the pdf via html.
+Huawei Pte. Ltd., Singapore
 
-:   **second-lang:** Description of your experience with second-lang,
-perhaps again including a [link] [ref], this time placing the url
-reference elsewhere in the document to reduce clutter (see source
-file).
+* Joined Huawei Shield Lab (one of Huawei's 2012 labs) in Singapore researching on adversarial machine learning.
 
-:   **obscure-but-impressive-lang:** We both know this one's pushing
-it.
+* Publish a [paper](https://arxiv.org/abs/2009.13033) on AiSec 2020 (a workshop of CCS 2020) about the analysis of robustness gain from transformation-based ensemble methods.
 
-:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
+## Technical Experience
 
-[ref]: https://github.com/githubuser/superlongprojectname
+-------
 
-Extra Section, Call it Whatever You Want
-----------------------------------------
+Funny Projects (Robotics):
+
+* [Digital hourglass using arduino](https://github.com/ScottLiao920/Arduino_Hourglass)
+* [Self-initiated robotics competition in NTU](https://github.com/ScottLiao920/DV_RoboticsCompetition_1stBatch)
+* Robomaster 2018 Competition
+* Maybe install a motor on my Tamiya Leopald tank model?
+
+Programming Languages:
+
+* **Python** Crawler, AI
+
+* **C++** Database-related
+
+* **C** Mostly for those small arduino projects
+
+* Basic knowledge of **x86 assembly**
+
+## Others
+
+-------
 
 * Human Languages:
-
-    * Chinese (native speaker)
-    * English (Proficient)
-
-* Random tidbit
-
-* Other sort of impressive-sounding thing you did
+  * Chinese (native speaker)
+  * English (Proficient)
+* Best 辣椒炒肉 (stir-fried pork with chilli) in Singapore
+* Vomit-free since '93
