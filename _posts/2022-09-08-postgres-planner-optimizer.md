@@ -78,3 +78,16 @@ title: Available Join/Scan Methods in PostgreSQL
         for every tuple s in A:
             for every tuple r in bucket h(s.ID):
                 emit (r, s)
+
+### Logical Joins
+
+* **Inner Join**
+  * Matched tuple
+* **Outer Join**
+  * Left-outer/Right-outer select concatenated tuples from all of left(right) tables and matched tuples from right(left) tables.
+  * Output dimension is the same as left(right) table.
+* **Semi Join**
+  * Not really a join as it only uses left/right table for refernce, only emits part of left/right tuple.
+* **Anti Join**
+  * Not-matched tuple
+* As in the figure below ![Joins]({{ BASE_PATH }}/pictures/Joins.png)
