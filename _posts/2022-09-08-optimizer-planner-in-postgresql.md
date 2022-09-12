@@ -34,11 +34,16 @@ title: Optimizer/Planner in PostgreSQL
 
 ### Outer Join Optimization Tricks
 
-* Reordering (Left & Right)
+* Reordering equations (applicable to both left & right outer join)
   
   1. $(A \bowtie_{left, P_{AB}} B) \bowtie_{P_{AC}} C  = (A \Join_{P_{AC}} C) \bowtie_{left, P_{AB}} B$
   2. $(A \Join_{left, P_{AB}} B) \Join_{left, P_{AC}} C = (A \Join_{left, P_{AC}} C) \bowtie_{left, P_{AB}} B$
   3. $(A \Join_{left, P_{AB}} B) \Join_{left, P_{BC}} C = A \Join_{left, P_{AB}} (B \bowtie_{left, P_{BC}} C)$
+* Re-associate semi joins to their left side.
+* Equation 3 doesn't apply to anti joins if join to $C$ is an anti join.
+* No reordering for full joins.
+* If subquery is a simple scan/join query, it's then pulled up and optimized together with the main query. If not, it is treated as a black box.
+* 
 
 ## Cost Estimator
 
