@@ -32,6 +32,14 @@ title: Optimizer/Planner in PostgreSQL
 
    * GEQO(Genetic Algorithm) TODO
 
+### Outer Join Optimization Tricks
+
+* Reordering (Left & Right)
+  
+  1. $(A \bowtie_{left, P_{AB}} B) \bowtie_{P_{AC}} C  = (A \Join_{P_{AC}} C) \bowtie_{left, P_{AB}} B$
+  2. $(A \Join_{left, P_{AB}} B) \Join_{left, P_{AC}} C = (A \Join_{left, P_{AC}} C) \bowtie_{left, P_{AB}} B$
+  3. $(A \Join_{left, P_{AB}} B) \Join_{left, P_{BC}} C = A \Join_{left, P_{AB}} (B \bowtie_{left, P_{BC}} C)$
+
 ## Cost Estimator
 
 * PostgreSQL uses a histogram-based cost estimator.
