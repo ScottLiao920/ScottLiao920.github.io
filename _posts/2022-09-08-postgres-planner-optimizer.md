@@ -6,8 +6,8 @@ title: Available Join/Scan Methods in PostgreSQL
 
 * PostgreSQL is a disk-oriented database, which means its data are stored on disks in pages. Access to heap page can
   be random or sequential, where random access costs roughly ~4times more expensive than a sequential access.
-* PostgreSQL is row-based, which means all columns of a tuple is stored on the same page. To address the issue of
-  variable-length data, tuples data are stored from back to beginning while their pointers are stored from beginning to
+* PostgreSQL is row-based, which means all columns of a tuple is stored on the same page. Slotted pages scheme is used to address the issue of
+  variable-length data. Tuples' data are stored from back to beginning while their pointers are stored from beginning to
   back in a heap page. ![Heap Page in PostgreSQL]({{ BASE_PATH }}/pictures/HeapPage.png)
 * Indexes are stored on separate pages. An entry of index table consists of (key value, TID of corresponding tuple).
 * Tuple Identifier (TID) is used to record the unique location of a tuple. It is 6-byte long and consists of two parts:
