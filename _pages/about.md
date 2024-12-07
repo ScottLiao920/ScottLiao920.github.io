@@ -12,9 +12,11 @@ redirect_from:
 Education
 ======
 * Ph.D in CCDS, NTU Singapore, 2028 (expected)
-* B.Eng. in Electric and Electronic Engineering, NTU, 2021 (First Class with Honours)
+  * under Prof. Wei Ying and Prof. Ke Yiping's supervision.
+* B.Eng. in Electric and Electronic Engineering with Honours (Highest Distinction), , NTU, 2021
 
 Work experience
+
 ======
 
 * Spring 2020: Algorithm Engineer Intern
@@ -63,4 +65,5 @@ Others
 ======
 
 Gym-goer, cyclist, gamer
-SBD@320kg
+
+currently SBD@320kg
