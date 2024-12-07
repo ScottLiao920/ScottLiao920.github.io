@@ -11,6 +11,7 @@ redirect_from:
 
 Education
 ======
+
 * Ph.D in CCDS, NTU Singapore, 2028 (expected)
 * B.Eng. in Electric and Electronic Engineering, NTU, 2021 (First Class with Honours)
 
@@ -25,7 +26,6 @@ Work experience
   * Shopee
   * Duties included: AutoML pipeline, conditional banner generation.
 
-  
 <!-- Skills
 ======
 * Skill 1
@@ -55,4 +55,5 @@ Teaching
   
 Service and leadership
 ======
+
 * NTU Da Vinci 3D Printing and Robomaster Club Vice President, AY19-21
