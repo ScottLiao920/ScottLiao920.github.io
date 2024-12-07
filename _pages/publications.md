@@ -1,4 +1,11 @@
 ---
+layout: archive
+title: "Publications"
+sitemap: true
+author_profile: true
+permalink: /publications/
+---
+
 title: "From Words to Molecules: A Survey of Large Language Models in Chemistry"
 collection: publications
 category: manuscripts
