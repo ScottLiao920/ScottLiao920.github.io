@@ -1,10 +1,10 @@
 ---
-layout: archive
-title: "CV"
-permalink: /cv/
+permalink: /
+title: "About Me"
 author_profile: true
-redirect_from:
-  - /resume
+redirect_from: 
+  - /about/
+  - /about.html
 ---
 
 {% include base_path %}
@@ -55,4 +55,12 @@ Teaching
   
 Service and leadership
 ======
+
 * NTU Da Vinci 3D Printing and Robomaster Club Vice President, AY19-21
+
+
+Others
+======
+
+Gym-goer, cyclist, gamer
+SBD@320kg
