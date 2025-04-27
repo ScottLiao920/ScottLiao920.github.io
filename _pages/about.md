@@ -16,7 +16,6 @@ Education
 * B.Eng. in Electric and Electronic Engineering with Honours (Highest Distinction), , NTU, 2021
 
 Work experience
-
 ======
 
 * Spring 2020: Algorithm Engineer Intern
@@ -66,4 +65,4 @@ Others
 
 Gym-goer, cyclist, gamer
 
-currently SBD@320kg
+currently SBD@350kg
