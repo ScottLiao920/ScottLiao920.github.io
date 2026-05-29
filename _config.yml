@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Liao Chang's Homepage"
 title_separator          : "-"
 name                     : &name "Liao Chang"
-description              : &description "Rookie researcher in the field of AI for chemistry."
+description              : &description "Ph.D. student at NTU CCDS specializing in AI for retrosynthesis and material discovery."
 url                      : https://ScottLiao920.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ScottLiao920/ScottLiao920.github.io"
@@ -76,12 +76,12 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+  manuscripts:
+    title: 'Preprints & Manuscripts'
+  books:
+    title: 'Books'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

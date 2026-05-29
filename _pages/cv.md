@@ -13,7 +13,18 @@ Education
 ======
 
 * Ph.D in CCDS, NTU Singapore, 2028 (expected)
-* B.Eng. in Electric and Electronic Engineering, NTU, 2021 (First Class with Honours)
+  * Supervised by Prof. Ke Yiping and Prof. Wei Ying.
+* B.Eng. in Electric and Electronic Engineering, NTU, 2021 (Honours with Highest Distinction)
+
+
+
+Research Interests
+======
+
+* Adaptive Generative Reasoning
+* Reinforcement Learning
+* Molecular Retrosynthesis
+* Material Discovery
 
 Work experience
 ======
@@ -53,7 +64,14 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul> -->
   
-Service and leadership
+Service
 ======
 
+* Reviewer, AAAI 2025
+* Reviewer, ICML 2026 (**Gold Reviewer**)
 * NTU Da Vinci 3D Printing and Robomaster Club Vice President, AY19-21
+
+Awards
+======
+
+* Runner-up, NTU Excellence in Teaching Award, AY25-26

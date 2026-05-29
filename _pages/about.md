@@ -9,11 +9,14 @@ redirect_from:
 
 {% include base_path %}
 
+
+I am a Ph.D. student at the College of Computing and Data Science (CCDS), Nanyang Technological University (NTU), supervised by Prof. Ke Yiping and Prof. Wei Ying. My research interests lie at the intersection of Adaptive Generative Reasoning and Reinforcement Learning, specifically applied to addressing data scarcity and computational bottlenecks in molecular retrosynthesis and material discovery.
+
 Education
 ======
 * Ph.D in CCDS, NTU Singapore, 2028 (expected)
-  * under Prof. Wei Ying and Prof. Ke Yiping's supervision.
-* B.Eng. in Electric and Electronic Engineering with Honours (Highest Distinction), , NTU, 2021
+  * Supervised by Prof. Ke Yiping and Prof. Wei Ying.
+* B.Eng. in Electric and Electronic Engineering, NTU, 2021 (Honours with Highest Distinction)
 
 Work experience
 ======
@@ -54,10 +57,18 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul> -->
   
-Service and leadership
+Service
 ======
 
+* Reviewer, AAAI 2025
+* Reviewer, ICML 2026 (**Gold Reviewer**)
 * NTU Da Vinci 3D Printing and Robomaster Club Vice President, AY19-21
+
+
+Awards
+======
+
+* Runner-up, NTU Excellence in Teaching Award, AY25-26
 
 
 Others
